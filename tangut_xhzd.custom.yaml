@@ -1,0 +1,18 @@
+# encoding: utf-8
+
+patch:
+  # 配合主題
+  menu/alternative_select_keys: hspnz
+  translator/enable_user_dict: false
+  translator/enable_sentence: false
+  'engine/translators/@before 1':
+    reverse_lookup_translator
+  reverse_lookup:
+    dictionary: stroke
+    enable_completion: true
+    prefix: "`"
+    suffix: "'"
+    tips: 〔笔画反查〕
+    closing_tips: 〔反查关闭〕
+    preedit_format:
+      - xlit/hspnz/一丨丿丶乙/

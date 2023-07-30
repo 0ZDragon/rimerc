@@ -1,0 +1,19 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Tiger Code - 虎码
+
+---
+name: tiger.extended
+version: "2023年 07月 13日 星期四"
+sort: by_weight
+import_tables:
+  - tiger
+  - tiger.i
+...
+
+覌白	reub
+猜豆腐	mzxj
+猜豆腐竞赛	mzxw
+覌白在吗	rund
+覌白一言	rufs
