@@ -44,16 +44,14 @@ patch:
       - {accept: apostrophe, send: 3, when: has_menu}
       # 数字键盘回车
       - { when: has_menu, accept: KP_Enter, send: Return }
-  # 宇浩拼音反查
+  # 拼音++反查
   schema/dependencies:
-    - yuhao_pinyin
+    - PY_c
   reverse_lookup:
-    dictionary: yuhao_pinyin
-    enable_completion: true
+    dictionary: PY_c
     prefix: "`"
     suffix: "'"
-    tips: 〔全拼反查〕
-    closing_tips: 〔反查关闭〕
+    tips: 〔拼音反查〕
     preedit_format:
       - xform/([nl])v/$1ü/
       - xform/([nl])ue/$1üe/
@@ -62,7 +60,7 @@ patch:
   chaifen:
     opencc_config: hu_cf.json
     option_name: chaifen
-#    show_in_comment: true
+    show_in_comment: true
     comment_format:
       - "xform/&nbsp;/ /"
     tags:
